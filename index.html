@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "weaver.css">
+    <script type = "text/javascript" src = "all-words.js"></script>
+    <script type = "text/javascript" src = "main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = 'heading'>WeaverBot</h1>
+    <div class="words">
+        <input type="text" class = 'input' id="starting-word" autocomplete="off" placeholder="start" onkeypress="return /[a-z]/i.test(event.key)" oninput="this.value = this.value.toUpperCase()" maxlength="4">
+        <input type="text" class = 'input' id="ending-word" autocomplete="off" placeholder="end" onkeypress="return /[a-z]/i.test(event.key)" oninput="this.value = this.value.toUpperCase()" maxlength="4">
+    </div>
+
+    <button class = 'submit' onclick="findPath()">find all shortest paths</button>
+    <h3 class = 'subheading'>Give me any two four letter words, and I'll show you all paths between them.</h3>
+    <canvas class="paths"></canvas>
+</body>
+</html>

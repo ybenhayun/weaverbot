@@ -1,0 +1,55 @@
+html {
+    font-family: Clear Sans,Helvetica Neue,Arial,sans-serif;
+}
+
+.heading {
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px lightgray;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheading {
+    text-align: center;
+}
+
+.row { 
+    display: flex;
+    gap: 2rem;
+}
+
+.input {
+    text-align: center;
+    width: 5.5rem;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.input:focus {
+    outline-width: 0;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+    text-decoration: underline;
+    outline: none;
+}
+
